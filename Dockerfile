@@ -5,7 +5,7 @@ RUN apt-get update
 # from http://stackoverflow.com/questions/13018626/
 RUN apt-get install -y python-software-properties git curl socat wget sudo
 
-# Need following for running phantomjs https://gist.github.com/julionc/7476620
+# Need following for running phantomjs https://gist.github.com/julionc/7476620 
 RUN apt-get install -y build-essential chrpath libssl-dev libxft-dev
 RUN apt-get install -y libfreetype6 libfreetype6-dev
 RUN apt-get install -y libfontconfig1 libfontconfig1-dev

@@ -5,6 +5,11 @@ RUN apt-get update
 # from http://stackoverflow.com/questions/13018626/
 RUN apt-get install -y python-software-properties git curl socat wget sudo
 
+# Need following for running phantomjs https://gist.github.com/julionc/7476620
+RUN apt-get install -y build-essential chrpath libssl-dev libxft-dev
+RUN apt-get install -y libfreetype6 libfreetype6-dev
+RUN apt-get install -y libfontconfig1 libfontconfig1-dev
+
 # from https://github.com/dockerfile/nodejs/blob/master/Dockerfile
 # Install Node.js
 RUN \

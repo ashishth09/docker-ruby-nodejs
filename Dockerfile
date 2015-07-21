@@ -2,6 +2,10 @@ FROM shawnzhu/ruby
 
 RUN apt-get update
 
+
+#Update kernel
+RUN apt-get install -y linux-image-generic-lts-trusty
+
 # from http://stackoverflow.com/questions/13018626/
 RUN apt-get install -y python-software-properties git curl socat wget sudo
 
